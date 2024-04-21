@@ -3,84 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Portfolio</title>
+    <title>Daewe Kim's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+            background-color: #f2f2f2; /* 배경색 */
         }
         .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center; /* 프로필 사진과 텍스트를 가운데 정렬 */
+            background-color: #fff; /* 컨테이너 배경색 */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
         }
-        h1, h2, h3 {
-            color: #333;
+        .profile-pic {
+            border-radius: 50%;
+            width: 240px;
+            height: 240px;
+            margin-bottom: 20px;
+            display: block; /* 이미지를 중앙 정렬하기 위해 display 속성을 block으로 설정 */
+            margin-left: auto; /* 이미지를 가운데 정렬하기 위해 왼쪽 여백을 자동으로 설정 */
+            margin-right: auto; /* 이미지를 가운데 정렬하기 위해 오른쪽 여백을 자동으로 설정 */
+        }
+        .icons {
+            margin-top: 20px;
+            text-align: center; /* 아이콘 가운데 정렬 */
+        }
+        .icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333; /* 제목색 */
         }
         p {
-            line-height: 1.6;
-            color: #666;
-        }
-        .project {
+            font-size: 18px;
             margin-bottom: 20px;
+            color: #666; /* 텍스트색 */
+            text-align: left; /* 텍스트 왼쪽 정렬 */
+            margin-top: 0; /* 첫 번째 단락의 위쪽 여백 제거 */
         }
-        .project h2 {
+        .section {
+            text-align: left;
+            margin-top: 40px;
+            background-color: #f8f8f8; /* 섹션 배경색 */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333; /* 섹션 제목색 */
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .section li {
             margin-bottom: 10px;
+            color: #666; /* 리스트 텍스트색 */
         }
-        .project p {
-            margin-bottom: 5px;
+        .section hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .date {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Engineering Portfolio</h1>
-    </header>
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Add a brief introduction about yourself here.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: example@example.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
+        <img class="profile-pic" src="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/resume_pic_4.jpg?raw=true" alt="Profile Picture">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/daewe-kim-9a282a297/"><img src="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/linked_in_icon.png?raw=true" alt="LinkedIn"></a>
+            <a href="mailto:ihlab.dwkim@gmail.com"><img src="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/Email_icon.png?raw=true" alt="Email"></a>
+            <a href="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/Resume_2024_Daewe_Kim.pdf?raw=true"><img src="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/resume_icon.png?raw=true" alt="Resume"></a>
+        </div>
+        <h1>Hello, I'm Daewe Kim.</h1>
+        <p>I Majored in Electrical Engineering for both my Bachelor's and Master's degrees at the Tech University of Korea (also known as Korea Polytechnic University). Through three years of research laboratory experience, I have developed skills in circuit design, embedded system development, and software development. Also, I have experience working as an assistant executive in the Overseas Business Division at the Korea Racing Authority, and I am proficient in speaking and writing in English.</p>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, C++</li>
+                <li>Microcontroller: AVR, Keil, STM32CubeIDE</li>
+                <li>Robotic Framework: ROS</li>
+                <li>Computational Modeling: MATLAB, Creo</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><img src="https://github.com/dkrj96/dkrj96.github.io-Resume_2024.pdf/blob/main/tukorea_icon.png?raw=true" alt="KoreaTech Icon"></p>
+            <p><strong>Tech University of Korea (Korea Polytechnic University)</strong></p>
+            <p class="date">Mar. 2022 ~ Feb. 2024</p>
+            <p>Master of Electronic Engineering - Advisor : Prof. Eung-Hyuk Lee</p>
+            <p><strong>Tech University of Korea (Korea Polytechnic University)</strong></p>
+            <p class="date">Mar. 2016 ~ Feb. 2022</p>
+            <p>Bachelor of Electronic Engineering - Advisor : Prof. Eung-Hyuk Lee</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>KRA (Korea Racing Authority)</strong></p>
+            <p class="date">Nov. 2016 ~ Jul. 2017</p>
+            <p>Assistant Executive in the Overseas Business Division</p>
+            <hr>
+            <p><strong>Korean Army</strong></p>
+            <p class="date">Jul. 2017 ~ Apr. 2019</p>
+            <p>Military Service, Honorably Discharged</p>
+            <hr>
+            <p><strong>Tech University of Korea (Korea Polytechnic University)</strong></p>
+            <p class="date">Mar. 2022 ~ Feb. 2024</p>
+            <p>Wireless Joystick Module for Control of Various Robot Platforms</p>
+            <ul>
+                <li>- Developed wireless ROS system based on Bluetooth to control multiple robots using a single joystick</li>
+                <li>- Designed 1 cell 3.3V lithium battery charging circuit that achieves greater convenience through reduced weight</li>
+                <li>- Implemented STM Cortex MCU based UART, USB communication, and ADC for debugging and interface</li>
+            </ul>
+            <hr>
+            <p><strong>Tech University of Korea (Korea Polytechnic University)</strong></p>
+            <p class="date">Mar. 2022 ~ Feb. 2024</p>
+            <p><strong>Development of Upper Limb Disability Wheelchair User-Specific Joystick Module and Simulation</strong></p> 
+            <ul>
+                <li>- Developed LPF, Deadzone, and Auto Calibration functions to address hand tremor and shaking symptoms</li>
+                <li>- Achieved 67% reduction in collision accident rates based on preliminary results from clinical trials</li>
+            </ul>
+            <hr>
+            <p><strong>Tech University of Korea (Korea Polytechnic University)</strong></p>
+            <p class="date">Mar. 2022 ~ Feb. 2024</p>
+            <p><strong>Elevator Boarding and Alighting System for Powered Wheelchairs</strong></p>
+            <ul>
+                <li>- Developed low and high reflection elevator recognition algorithm using LiDAR sensor</li>
+                <li>- Developed ROS-based elevator boarding and alighting navigation system</li>
+                <li>- Achieved 76.7% recognition success with 4.86cm precision using a LiDAR on an elevator with 94.2% reflectivity</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Publications and Patents</h2>
+            <ul>
+                <li>Study on Elevator Recognition Techniques for Upper-Limb-Disabled Wheelchair Users MDPI 2023</li>
+                <li>A Study on the Assistive System for Safe Elevator Get on of Wheelchair Users with Upper Limb Disability ICEIC 2023</li>
+                <li>Real-Time AI-Based Calibration Cloud System for 6-Axis Force/Torque Sensors Korean Patent PCT/KR2023/021864</li>
+                <li>UWB based, Multi-Story Autonomous Robot Elevator Navigation System Korean Patent PCT/KR2023/021862</li>
+                <li>Safe Wheelchair Elevator Boarding System Utilizing LiDAR and Ultrasonic Sensors Korean Patent No.10-0130386(2023)</li>
+                <li>Wheelchair Moving System That Can be Used in Elevator Korean Patent No.10-0158357(2022)</li>
+                <li>Sensor Module and Wheelchair Including the Same Korean Patent No.10-0158356(2022)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Awards</h2>
+            <ul>
+                <li>Undergraduate Paper Competition at The Fall Academic Conference – Encouragement Award IEIE 2021</li>
+                <li>Pro Bono ICT – Silver Medal Hanium 2021</li>
+                <li>CP-CoP – Grand Prize Korea Polytechnic University 2021</li>
+                <li>Capstone Design – President’s Award Korea Polytechnic University 2021</li>
+                <li>AI & IoT MAKE A TON – Excellence Award GIST(Gwangju Institute of Science and Technology) 2020</li>
+            </ul>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2022 Engineering Portfolio</p>
-    </footer>
 </body>
 </html>
